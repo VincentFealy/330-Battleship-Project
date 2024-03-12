@@ -132,7 +132,7 @@ public class GameWindow implements Serializable {
         imagePanel.setBackground(Color.DARK_GRAY);
 
         //Load and scale the aircraft image
-        AircraftLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/aircraft.png", 100, 100);
+        AircraftLabel = loadImageAndScale("src/Ships/aircraft.png", 100, 100);
         imagePanel.add(AircraftLabel);
 
         AircraftLabel.addMouseListener(new MouseAdapter() {
@@ -154,7 +154,7 @@ public class GameWindow implements Serializable {
         });
 
         //load and scale the battleship image
-        BattleshipLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/battleship.png", 100, 100);
+        BattleshipLabel = loadImageAndScale("src/Ships/battleship.png", 100, 100);
         imagePanel.add(BattleshipLabel);
 
         //Create a mouse listener for the BattleshipLabel
@@ -176,7 +176,7 @@ public class GameWindow implements Serializable {
 
 
         // Load the Cruiser and scale Image
-        CruiserLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/cruiser.png", 100, 100);
+        CruiserLabel = loadImageAndScale("src/Ships/cruiser.png", 100, 100);
         imagePanel.add(CruiserLabel);
 
         // Create a mouse listener for the CruiserLabel
@@ -197,7 +197,7 @@ public class GameWindow implements Serializable {
         });
 
         //Load the Submarine and scale image
-        SubmarineLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/submarine.png", 100, 100);
+        SubmarineLabel = loadImageAndScale("src/Ships/submarine.png", 100, 100);
         imagePanel.add(SubmarineLabel);
 
         SubmarineLabel.addMouseListener(new MouseAdapter() {
@@ -218,7 +218,7 @@ public class GameWindow implements Serializable {
         });
 
         //Load the Destroyer and scale Image
-        DestroyLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/destroyer.png", 100, 100);
+        DestroyLabel = loadImageAndScale("src/Ships/destroyer.png", 100, 100);
         imagePanel.add(DestroyLabel);
 
         DestroyLabel.addMouseListener(new MouseAdapter() {
@@ -272,20 +272,20 @@ public class GameWindow implements Serializable {
         opponentsImagePanel = new JPanel();
         opponentsImagePanel.setLayout(new BoxLayout(opponentsImagePanel, BoxLayout.Y_AXIS));
 
-        OpponentAircraftLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/aircraft.png", 50, 50);
+        OpponentAircraftLabel = loadImageAndScale("src/Ships/aircraft.png", 50, 50);
         OpponentAircraftLabel.setBackground(Color.DARK_GRAY);
         opponentsImagePanel.add(OpponentAircraftLabel);
 
-        OpponentBattleshipLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/battleship.png", 50, 50);
+        OpponentBattleshipLabel = loadImageAndScale("src/Ships/battleship.png", 50, 50);
         opponentsImagePanel.add(OpponentBattleshipLabel);
 
-        OpponentCruiserLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/cruiser.png", 50, 50);
+        OpponentCruiserLabel = loadImageAndScale("src/Ships/cruiser.png", 50, 50);
         opponentsImagePanel.add(OpponentCruiserLabel);
 
-        OpponentSubmarineLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/submarine.png", 50, 50);
+        OpponentSubmarineLabel = loadImageAndScale("src/Ships/submarine.png", 50, 50);
         opponentsImagePanel.add(OpponentSubmarineLabel);
 
-        OpponentDestroyLabel = loadImageAndScale("/Users/vincentfealy/Battleship/src/Ships/destroyer.png", 50, 50);
+        OpponentDestroyLabel = loadImageAndScale("src/Ships/destroyer.png", 50, 50);
         opponentsImagePanel.add(OpponentDestroyLabel);
 
         centerPanel.add(opponentsImagePanel);
